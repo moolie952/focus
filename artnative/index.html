@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+        <meta name="keywords" content="artstep art">
+        <meta name="description" content="ART">
+        <title>artStep</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo" onclick="slowScroll('#top')">
+                <span>artStep</span>
+            </div>
+            <div id="about">
+            <a href="#" title="Возможности" onclick="slowScroll('#main')">Facilities</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Contacts</a>
+            <a href="#" title="Помощь" onclick="slowScroll('#overwiew')">Help</a>
+            <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+            </div>
+        </header>
+    
+        <div id="top">
+            <h1 id="zag1">Feel pure inspiration</h1>
+            <h3 id="zag2">and unlaesh your own potential</h3>
+            <h5>break the boundaries</h5>
+        </div>
+       
+        <div id="main">
+            <div class="intro">
+                <h2>Turn your eyes to aesthethics</h2>
+                <h3>Let the little things matter</h3>
+                
+            </div>
+               <div class="text">
+                <span>Learn to see the beauty in every breeze on a spring morning after rain. Start to contemplate! Understanding the im[ortance of small, you will not forget about the importance of large.</span>
+                
+            </div>
+        </div>
+       
+        <div id="overview">
+            <h2>Find what inspires you</h2>
+            <div class="img">
+            <img src="../artnative/images/vangogh.jpg" alt="">
+                <div class="pod">
+                    <h3>Classics</h3>
+                <span>Touch the creations of great classics and feel the skill of recognized geniuses.</span>
+            </div>
+            </div>
+            
+            <div class="img">
+            <img src="../artnative/images/pencil.jpg" alt="">
+                <div class="pod">
+                    <h3>Pencil art</h3>
+                <span>Find inspirations in the curves of pencil lines.</span>
+            </div>
+            </div>
+            <div class="img">
+            <img src="../artnative/images/abstract.jpg" alt="">
+                <div class="pod">
+                    <h3>Abstraction</h3>
+                <span>Let your mind flow into abstraction.</span>
+            </div>
+            </div>
+            <div class="img">
+            <img src="../artnative/images/double.jpg" alt="">
+                <div class="pod">
+                    <h3>Double</h3>
+                <span>Do not put the boundaries in the number of paintings.</span>
+            </div>
+            </div>
+            <div class="img">
+            <img src="../artnative/images/flat.jpg" alt="">
+                <div class="pod">
+                    <h3>Flat</h3>
+                <span>Let your mind follow flat shapes.</span>
+            </div>
+            </div>
+            <div class="img">
+            <img src="../artnative/images/minimalism.jpg" alt="">
+                <div class="pod">
+                    <h3>Minimalism</h3>
+                <span>Discard all unnecessary and surrender to inspiration.</span>
+            </div>
+            </div>
+        </div>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        function slowScroll(id) {
+        $('html, body').animate({
+        scrollTop: $(id).offset().top
+        },400)
+        }
+            
+            $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+                else
+                $("header").attr("class", "fixed");
+ 
+            });
+        </script>>
+        <script src="../animemaster.js/anime-master/lib/anime.js"></script>>
+        <script>
+        anime({
+  targets: '#logo',
+  translateX: 250
+});
+           
+        </script>>
+        
+    </body>
+    
+</html>
